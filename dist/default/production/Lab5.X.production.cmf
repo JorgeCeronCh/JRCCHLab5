@@ -1,0 +1,287 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Lab5main.o
+resVect CODE 0 0 0 3 2 1
+code CODE 0 0 0 214 2 1
+intVect CODE 0 0 0 35 2 1
+udata_bank0 BANK0 1 20 20 6 1 1
+udata_shr COMMON 1 70 70 2 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 26-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 26-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 214-1FFF 2
+ENTRY 214-1FFF 2
+IDLOC 2000-2003 2
+CODE 214-1FFF 2
+COMMON 72-7F 1
+EEDATA 2100-21FF 2
+STRCODE 214-1FFF 2
+STRING 214-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Lab5main.o
+0 intVect CODE >66:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+4 intVect CODE >68:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+5 intVect CODE >69:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+6 intVect CODE >70:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+7 intVect CODE >73:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+8 intVect CODE >74:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+9 intVect CODE >76:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+A intVect CODE >77:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+B intVect CODE >79:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+D intVect CODE >81:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+E intVect CODE >82:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+F intVect CODE >83:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+10 intVect CODE >84:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+11 intVect CODE >86:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+12 intVect CODE >89:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+14 intVect CODE >89:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+15 intVect CODE >89:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+16 intVect CODE >89:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+17 intVect CODE >90:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+18 intVect CODE >92:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+19 intVect CODE >95:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+1A intVect CODE >96:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+1B intVect CODE >97:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+1C intVect CODE >98:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+1D intVect CODE >101:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+1E intVect CODE >102:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+1F intVect CODE >103:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+20 intVect CODE >104:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+21 intVect CODE >106:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+22 intVect CODE >109:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+23 intVect CODE >110:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+24 intVect CODE >111:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+25 intVect CODE >112:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+26 intVect CODE >114:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+27 intVect CODE >117:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+29 intVect CODE >118:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+2A intVect CODE >119:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+2B intVect CODE >120:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+2C intVect CODE >121:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+2D intVect CODE >122:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+2E intVect CODE >124:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+2F intVect CODE >127:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+30 intVect CODE >128:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+31 intVect CODE >130:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+32 intVect CODE >133:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+33 intVect CODE >134:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+34 intVect CODE >136:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+0 resVect CODE >59:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+0 resVect CODE >61:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+2 resVect CODE >62:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+0 code CODE >139:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+100 code CODE >141:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+101 code CODE >142:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+102 code CODE >143:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+103 code CODE >144:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+104 code CODE >145:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+105 code CODE >146:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+107 code CODE >149:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+108 code CODE >150:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+109 code CODE >151:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+10A code CODE >154:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+10C code CODE >155:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+10D code CODE >156:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+10E code CODE >157:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+10F code CODE >158:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+110 code CODE >160:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+111 code CODE >163:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+113 code CODE >164:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+114 code CODE >165:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+115 code CODE >166:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+116 code CODE >167:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+117 code CODE >168:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+118 code CODE >171:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+11A code CODE >171:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+11B code CODE >171:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+11C code CODE >171:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+11D code CODE >173:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+11E code CODE >176:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+120 code CODE >177:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+121 code CODE >178:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+122 code CODE >180:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+124 code CODE >181:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+125 code CODE >182:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+126 code CODE >183:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+127 code CODE >184:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+128 code CODE >185:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+129 code CODE >186:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+12A code CODE >188:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+12B code CODE >189:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+12C code CODE >190:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+12D code CODE >192:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+12F code CODE >193:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+130 code CODE >194:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+131 code CODE >195:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+132 code CODE >196:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+133 code CODE >198:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+134 code CODE >199:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+135 code CODE >200:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+136 code CODE >201:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+137 code CODE >203:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+138 code CODE >206:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+13A code CODE >207:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+13B code CODE >208:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+13C code CODE >209:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+13D code CODE >211:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+13E code CODE >212:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+13F code CODE >214:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+140 code CODE >217:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+142 code CODE >218:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+143 code CODE >219:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+144 code CODE >221:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+146 code CODE >222:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+147 code CODE >223:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+148 code CODE >225:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+149 code CODE >229:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+14A code CODE >230:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+14B code CODE >231:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+14C code CODE >233:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+14D code CODE >234:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+14E code CODE >235:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+14F code CODE >236:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+150 code CODE >237:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+151 code CODE >240:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+152 code CODE >241:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+153 code CODE >242:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+154 code CODE >244:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+155 code CODE >245:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+156 code CODE >246:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+157 code CODE >247:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+158 code CODE >249:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+200 code CODE >251:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+201 code CODE >252:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+202 code CODE >253:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+203 code CODE >254:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+204 code CODE >255:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+205 code CODE >256:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+206 code CODE >257:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+207 code CODE >258:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+208 code CODE >259:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+209 code CODE >260:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+20A code CODE >261:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+20B code CODE >262:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+20C code CODE >263:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+20D code CODE >264:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+20E code CODE >265:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+20F code CODE >266:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+210 code CODE >267:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+211 code CODE >268:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+212 code CODE >269:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+213 code CODE >270:C:\Users\jorge\OneDrive\Escritorio\5TO_SEMESTRE\PROGRA_MICROS\Lab5\Lab5\Lab5.X\Lab5main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 214 0 ABS 0 - -
+__Hspace_1 72 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 72 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__LintVect 0 0 ABS 0 intVect -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+__HintVect 0 0 ABS 0 intVect -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_bank0 1 20 20 6 1
+udata_shr 1 70 70 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
